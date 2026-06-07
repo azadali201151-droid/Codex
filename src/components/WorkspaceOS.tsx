@@ -165,7 +165,7 @@ export default function WorkspaceOS({
 
   // Mobile Swipe Section Layout Tabs: 'explorer' | 'editor' | 'ai' | 'preview' | 'terminal'
   const [mobileTab, setMobileTab] = useState<'explorer' | 'editor' | 'ai' | 'preview' | 'terminal'>('editor');
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   // Command Palette & Key Bindings Overlay
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
@@ -255,7 +255,7 @@ export default function WorkspaceOS({
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      const isMobileDevice = width < 768;
+      const isMobileDevice = true; // Always use mobile layout as requested
       setIsMobile(isMobileDevice);
 
       if (zoomLevel === 'auto') {
