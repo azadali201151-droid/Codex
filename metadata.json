@@ -1,0 +1,6 @@
+{
+  "name": "Codex",
+  "description": "An advanced developer platform with predictive autocomplete, AI co-pilot, real-time collaboration, and automated deployment pipelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
